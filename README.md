@@ -1,4 +1,3 @@
-@[TOC]
 
 # ABC_data_game
 
