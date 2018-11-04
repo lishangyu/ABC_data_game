@@ -5,11 +5,12 @@ import os
 import create_dataset
 
 ##lmdb 输出目录
-create_val=True
-outputPath_train = '../data/lmdb/train'
-outputPath_val = '../data/lmdb/val'
+create_val=True #是否制作验证集
+
+outputPath_train = '../data/lmdb/train' #训练集输出路径
+outputPath_val = '../data/lmdb/val' #验证集输出路径
 val_per=0.1#验证集比例
-path = '../data/dataline/*.jpg'
+path = '../data/dataline/*.jpg' #读入图像路径
 imagePathList = glob.glob(path)
 total_image=len(imagePathList)
 val_num=int(val_per*total_image)

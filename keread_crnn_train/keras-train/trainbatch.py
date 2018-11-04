@@ -24,7 +24,7 @@ j = 0
 crrentLoss = 1000
 loss = 1000
 interval  = 50
-for i in range(3):
+for i in range(keras_train_cfg.epoch):
     for X,Y in train_loader:
                 X = X.numpy()
                 X = X.reshape((-1,imgH,imgW,1))
